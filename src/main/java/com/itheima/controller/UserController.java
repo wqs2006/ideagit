@@ -26,4 +26,10 @@ public class UserController {
         System.out.println("user update ..."+name);
         return "{'model':'springmvc'}";
     }
+    @RequestMapping("/select")
+    @ResponseBody
+    public String select(String name){
+        System.out.println("user select ..."+name);
+        return "{'model':'springmvc'}";
+    }
 }
